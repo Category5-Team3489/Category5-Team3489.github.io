@@ -9,7 +9,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/:bitcoin" element = {
+          <Route path="/bitcoin" element = {
             <BitcoinPrice />
           } />
           <Route path="/" element={
