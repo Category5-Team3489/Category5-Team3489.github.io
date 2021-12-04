@@ -11,6 +11,8 @@ export function BitcoinPrice() {
         .then(response => {
             //setPrice(response.data.data.amount)
             setPrice(response.data)
+            console.log(response.data)
+            console.log(response.statusText)
         })
     }, [])
  

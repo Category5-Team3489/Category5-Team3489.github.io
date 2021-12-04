@@ -7,5 +7,3 @@ cd "E:\Projects\Visual Studio\Category5-Team3489.github.io"
 git add .
 git commit -m "Deploy website"
 git push
-
-pause
