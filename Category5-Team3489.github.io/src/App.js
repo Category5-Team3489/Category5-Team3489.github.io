@@ -1,9 +1,8 @@
 import React from "react";
-import { useLocation, BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { useLocation, Navigate, BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./css/App.css";
 import {BitcoinPrice} from "./components/API";
 import Navbar from "./components/Navbar";
-import { Navigate  } from 'react-router';
 
 function App() {
   return (
@@ -23,7 +22,6 @@ function App() {
           } />
         </Routes>
       </Router>
-      <div className="Background"/>
     </div>
   );
 }
