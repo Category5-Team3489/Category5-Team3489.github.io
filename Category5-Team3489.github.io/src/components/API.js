@@ -24,9 +24,9 @@ export function Test3489DB() {
     const [TestText, setText] = useState("")
  
     useEffect(() => {
-        Axios.get('https://db.team3489.tk/')
+        Axios.get('https://db.team3489.tk')
         .then(response => {
-            setText(response.data[0].summary)
+            setText(response.data)
         })
     }, [])
  
