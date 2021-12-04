@@ -2,6 +2,7 @@ import React from "react";
 import { useLocation, Navigate, BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./css/App.css";
 import {BitcoinPrice} from "./components/API";
+import {Test3489DB} from "./components/API";
 import Navbar from "./components/Navbar";
 
 function App() {
@@ -12,6 +13,9 @@ function App() {
         <Routes>
           <Route path="/bitcoin" element = {
             <BitcoinPrice />
+          } />
+          <Route path="/testdb" element = {
+            <Test3489DB />
           } />
           <Route path="/" element={
             <div>

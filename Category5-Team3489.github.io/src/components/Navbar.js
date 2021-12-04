@@ -7,6 +7,7 @@ function Navbar() {
     <div className='Navbar' >
       <span><Link to="/">Home</Link></span>
       <span><Link to="/bitcoin">Bitcoin</Link></span>
+      <span><Link to="/testdb">Test DB</Link></span>
     </div>
   )
 }

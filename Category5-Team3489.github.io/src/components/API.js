@@ -18,3 +18,21 @@ export function BitcoinPrice() {
         </div>
     )
 }
+
+export function Test3489DB() {
+ 
+    const [TestText, setText] = useState("")
+ 
+    useEffect(() => {
+        Axios.get('https://db.team3489.tk/')
+        .then(response => {
+            setText(response)
+        })
+    }, [])
+ 
+    return (
+        <div>
+            Test 3498 DB: ${TestText}
+        </div>
+    )
+}
