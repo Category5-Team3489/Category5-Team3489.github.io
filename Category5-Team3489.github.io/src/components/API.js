@@ -27,12 +27,12 @@ export function Test3489DB() {
         Axios.get('https://db.team3489.tk')
         .then(response => {
             setText(response.data[0].summary)
-        }).catch(error => {console.log(error)})
+        })
     }, [])
  
     return (
         <div>
-            Test 3498 DB: {TestText}
+            Test 3489 DB: {TestText}
         </div>
     )
 }
