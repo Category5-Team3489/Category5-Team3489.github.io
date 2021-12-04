@@ -6,9 +6,11 @@ export function BitcoinPrice() {
     const [Price, setPrice] = useState("")
  
     useEffect(() => {
-        Axios.get('https://api.coinbase.com/v2/prices/spot?currency=USD')
+        //Axios.get('https://api.coinbase.com/v2/prices/spot?currency=USD')
+        Axios.get('https://db.team3489.tk')
         .then(response => {
-            setPrice(response.data.data.amount)
+            //setPrice(response.data.data.amount)
+            setPrice(response.data)
         })
     }, [])
  
@@ -32,7 +34,7 @@ export function Test3489DB() {
  
     return (
         <div>
-            Test 3498 DB: ${TestText}
+            Test 3498 DB: {TestText}
         </div>
     )
 }
