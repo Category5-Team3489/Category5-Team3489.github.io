@@ -10,7 +10,7 @@ export function BitcoinPrice() {
         Axios.get('https://db.team3489.tk')
         .then(response => {
             //setPrice(response.data.data.amount)
-            setPrice(response.data)
+            setPrice(response)
         })
     }, [])
  
@@ -28,7 +28,7 @@ export function Test3489DB() {
     useEffect(() => {
         Axios.get('https://db.team3489.tk')
         .then(response => {
-            setText(response.data)
+            setText(response)
         })
     }, [])
  
