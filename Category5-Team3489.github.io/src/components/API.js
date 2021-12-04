@@ -26,13 +26,14 @@ export function Test3489DB() {
     useEffect(() => {
         Axios.get('https://db.team3489.tk')
         .then(response => {
-            setText(response.data[0].summary)
+            setText(JSON.stringify(response.data))
         })
     }, [])
  
     return (
         <div>
-            Test 3489 DB: {TestText}
+            Test 3489 DB: <br/>
+            {TestText}
         </div>
     )
 }
