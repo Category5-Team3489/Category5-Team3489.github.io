@@ -24,7 +24,6 @@ export function Test3489DB() {
     const [TestText, setText] = useState("")
  
     useEffect(() => {
-        //Axios.get('http://localhost')
         Axios.get('https://db.team3489.tk')
         .then(response => {
             setText(JSON.stringify(response.data))
